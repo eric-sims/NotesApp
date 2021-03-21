@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B54168AA25F5ECEA000FC52A /* NoteComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54168A925F5ECEA000FC52A /* NoteComposerView.swift */; };
+		B54168B725F6049B000FC52A /* NoteGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54168B625F6049B000FC52A /* NoteGroup.swift */; };
 		B56D3C8025F5A91C00742E1C /* NotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D3C7F25F5A91C00742E1C /* NotesAppApp.swift */; };
 		B56D3C8225F5A91C00742E1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D3C8125F5A91C00742E1C /* ContentView.swift */; };
 		B56D3C8425F5A91E00742E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56D3C8325F5A91E00742E1C /* Assets.xcassets */; };
 		B56D3C8725F5A91E00742E1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56D3C8625F5A91E00742E1C /* Preview Assets.xcassets */; };
 		B56D3C9225F5A91E00742E1C /* NotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D3C9125F5A91E00742E1C /* NotesAppTests.swift */; };
 		B56D3C9D25F5A91E00742E1C /* NotesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D3C9C25F5A91E00742E1C /* NotesAppUITests.swift */; };
+		B56D3CAE25F5C27000742E1C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D3CAD25F5C27000742E1C /* Note.swift */; };
+		B56D3CB325F5C2AD00742E1C /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D3CB225F5C2AD00742E1C /* NoteRow.swift */; };
+		B576E8252606E6B2007313BD /* NeumorhpicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576E8242606E6B2007313BD /* NeumorhpicButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B54168A925F5ECEA000FC52A /* NoteComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteComposerView.swift; sourceTree = "<group>"; };
+		B54168B625F6049B000FC52A /* NoteGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteGroup.swift; sourceTree = "<group>"; };
 		B56D3C7C25F5A91C00742E1C /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56D3C7F25F5A91C00742E1C /* NotesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppApp.swift; sourceTree = "<group>"; };
 		B56D3C8125F5A91C00742E1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +52,9 @@
 		B56D3C9825F5A91E00742E1C /* NotesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56D3C9C25F5A91E00742E1C /* NotesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppUITests.swift; sourceTree = "<group>"; };
 		B56D3C9E25F5A91E00742E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B56D3CAD25F5C27000742E1C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B56D3CB225F5C2AD00742E1C /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
+		B576E8242606E6B2007313BD /* NeumorhpicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorhpicButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				B56D3C7F25F5A91C00742E1C /* NotesAppApp.swift */,
-				B56D3C8125F5A91C00742E1C /* ContentView.swift */,
+				B56D3CB825F5C93C00742E1C /* View */,
+				B56D3CB725F5C92200742E1C /* Model */,
 				B56D3C8325F5A91E00742E1C /* Assets.xcassets */,
 				B56D3C8825F5A91E00742E1C /* Info.plist */,
 				B56D3C8525F5A91E00742E1C /* Preview Content */,
@@ -128,6 +139,26 @@
 				B56D3C9E25F5A91E00742E1C /* Info.plist */,
 			);
 			path = NotesAppUITests;
+			sourceTree = "<group>";
+		};
+		B56D3CB725F5C92200742E1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B56D3CAD25F5C27000742E1C /* Note.swift */,
+				B54168B625F6049B000FC52A /* NoteGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B56D3CB825F5C93C00742E1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B56D3CB225F5C2AD00742E1C /* NoteRow.swift */,
+				B56D3C8125F5A91C00742E1C /* ContentView.swift */,
+				B54168A925F5ECEA000FC52A /* NoteComposerView.swift */,
+				B576E8242606E6B2007313BD /* NeumorhpicButtonView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56D3C8225F5A91C00742E1C /* ContentView.swift in Sources */,
+				B54168AA25F5ECEA000FC52A /* NoteComposerView.swift in Sources */,
 				B56D3C8025F5A91C00742E1C /* NotesAppApp.swift in Sources */,
+				B54168B725F6049B000FC52A /* NoteGroup.swift in Sources */,
+				B576E8252606E6B2007313BD /* NeumorhpicButtonView.swift in Sources */,
+				B56D3CB325F5C2AD00742E1C /* NoteRow.swift in Sources */,
+				B56D3CAE25F5C27000742E1C /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NotesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HFQKB87NS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NotesApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NotesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HFQKB87NS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NotesApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -480,7 +518,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HFQKB87NS;
 				INFOPLIST_FILE = NotesAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,6 +560,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HFQKB87NS;
 				INFOPLIST_FILE = NotesAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
