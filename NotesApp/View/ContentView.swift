@@ -51,6 +51,7 @@ struct ContentView: View {
         }
     }
     
+    
     func deleteItem(indexSet: IndexSet) {
         noteGroup.notes.remove(atOffsets: indexSet)
     }
