@@ -17,7 +17,6 @@
 		B56D3C9D25F5A91E00742E1C /* NotesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D3C9C25F5A91E00742E1C /* NotesAppUITests.swift */; };
 		B56D3CAE25F5C27000742E1C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D3CAD25F5C27000742E1C /* Note.swift */; };
 		B56D3CB325F5C2AD00742E1C /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D3CB225F5C2AD00742E1C /* NoteRow.swift */; };
-		B576E8252606E6B2007313BD /* NeumorhpicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576E8242606E6B2007313BD /* NeumorhpicButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		B56D3C9E25F5A91E00742E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56D3CAD25F5C27000742E1C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		B56D3CB225F5C2AD00742E1C /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
-		B576E8242606E6B2007313BD /* NeumorhpicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorhpicButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +154,6 @@
 				B56D3CB225F5C2AD00742E1C /* NoteRow.swift */,
 				B56D3C8125F5A91C00742E1C /* ContentView.swift */,
 				B54168A925F5ECEA000FC52A /* NoteComposerView.swift */,
-				B576E8242606E6B2007313BD /* NeumorhpicButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,7 +291,6 @@
 				B54168AA25F5ECEA000FC52A /* NoteComposerView.swift in Sources */,
 				B56D3C8025F5A91C00742E1C /* NotesAppApp.swift in Sources */,
 				B54168B725F6049B000FC52A /* NoteGroup.swift in Sources */,
-				B576E8252606E6B2007313BD /* NeumorhpicButtonView.swift in Sources */,
 				B56D3CB325F5C2AD00742E1C /* NoteRow.swift in Sources */,
 				B56D3CAE25F5C27000742E1C /* Note.swift in Sources */,
 			);

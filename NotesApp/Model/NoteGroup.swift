@@ -7,11 +7,15 @@
 
 import Foundation
 
-class NoteGroup: ObservableObject {
+class AllNotes: ObservableObject {
     @Published var notes = [Note]()
-    
-    init() {
-        notes = [Note]()
+
+    convenience init() {
+        self.init(notes: [
+            Note(title: "Grocery List", pinned: true),
+            Note(title: "Life Goals", pinned: true),
+            Note(title: "Sunday Notes", pinned: false)
+        ])
     }
     
     init(titles: [String], pinned: [Bool]) {
@@ -20,8 +24,22 @@ class NoteGroup: ObservableObject {
         }
     }
     
-    func append(note: Note) {
+    init(notes: [Note]) {
+        for note in notes {
+            self.append(note)
+        }
+    }
+
+    func append(_ note: Note) {
         notes.append(note)
     }
     
+    func delete(_ indexSet: IndexSet) {
+        notes.remove(atOffsets: indexSet)
+    }
+    
+    func createNewNote() {
+        append(Note(title: "New Note"))
+    }
+
 }

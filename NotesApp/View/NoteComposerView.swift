@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct NoteComposerView: View {
-    @State var note: Note
-    @State var text: String = ""
+    var note: Note
+    //@EnvironmentObject var allNotes: AllNotes // NEED TO WIRE TOGETHER
+    @State var noteMessage: String = ""
     
     var body: some View {
         VStack {
-            //Text(note.title).font(.title)
-            TextEditor(text: $text)
-                .border(Color.black)
+            TextEditor(text: $noteMessage)
+                .cornerRadius(10)
+                .shadow(color: .black, radius: 10, x: 5, y: 5)
                 .padding()
         }
         .navigationTitle(note.title)

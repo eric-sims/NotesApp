@@ -7,29 +7,26 @@
 
 import Foundation
 
-struct Note: Identifiable {
+class Note: Identifiable {
     var id = UUID()
     var title: String
-    var text: String
+    var text: String = ""
     var pinned: Bool = false
-    var dateCreated: Date
+    var dateCreated: Date = Date()
     
-//    init(title: String, text: String, dateCreated: Date) {
-//        self.title = title
-//        self.text = text
-//        self.dateCreated = dateCreated
-//    }
+    init(title: String, text: String, dateCreated: Date) {
+        self.title = title
+        self.text = text
+        self.dateCreated = dateCreated
+    }
     
     init(title: String) {
         self.title = title
-        text = ""
-        dateCreated = Date()
     }
+    
     init(title: String, pinned: Bool) {
         self.title = title
         self.pinned = pinned
-        text = ""
-        dateCreated = Date()
     }
     
     func getDateCreated() -> String {
